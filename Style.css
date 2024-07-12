@@ -1,0 +1,543 @@
+ /* Style.css */
+
+ * {
+    font-family: Georgia, Times, "Times New Roman", serif;
+  }
+  
+  .quiz,
+  .scores {
+    margin: 50px auto 0 auto;
+    max-width: 400px;
+  }
+  
+  #top {
+    color: rgb(156, 90, 10);
+  }
+  
+  .containerNew {
+    border: 20px solid    ;
+    color:#fec195;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 580px;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+  }
+  
+  p {
+    margin: 15px 15px;
+  }
+  
+  .landing {
+    text-align: center;
+  }
+  
+  .scoresHeader {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .timer {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color:red;
+    
+  }
+  
+  button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #526686;
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+  }
+  
+  button {
+    position: relative;
+    padding: 12px 35px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #fec195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #000000;
+  }
+  
+  
+  .options button {
+    height: auto;
+    width:100%;
+    display: block;
+  }
+  
+  input[type="text"] {
+    border-radius: 10px;
+    outline: 5px solid #FEBF00;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+    font-size: 100%;
+  }
+  .input:focus {
+    outline-offset: 5px;
+    background-color: #060606
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .feedback {
+    font-style: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: #fff;
+    border-top: 2px solid #4B0082;
+  }
+  
+  ol {
+    padding-left: 15px;
+    max-height: 600px;
+    overflow: auto;
+  }
+  
+  li {
+    padding: 5px;
+    list-style: decimal inside none;
+  }
+  
+  li:nth-child(odd) {
+    background-color: #dfdae7;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .containerNew {
+        width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .containerNew {
+        width: 90%;
+    }
+  
+    .quiz,
+    .scores {
+        max-width: 90%;
+    }
+  }
+  .loader {
+    width: 120px;
+    height: 150px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#ddd 50%, #bbb 51%),
+      linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
+      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
+      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
+      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);
+    background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;
+    background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;
+    position: relative;
+    border-radius: 6%;
+    animation: shake 3s ease-in-out infinite;
+    transform-origin: 60px 180px;
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 100%;
+    width: 7px;
+    height: 5px;
+    background: #aaa;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 102px 0 #aaa;
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    background-color: #bbdefb;
+    background-image: linear-gradient( to right, #0004 0%, #0004 49%, #0000 50%, #0000 100% ),
+      linear-gradient(135deg, #64b5f6 50%, #607d8b 51%);
+    background-size: 30px 100%, 90px 80px;
+    border-radius: 50%;
+    background-repeat: repeat, no-repeat;
+    background-position: 0 0;
+    box-sizing: border-box;
+    border: 10px solid #DDD;
+    box-shadow: 0 0 0 4px #999 inset, 0 0 6px 6px #0004 inset;
+    animation: spin 3s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg)
+    }
+  
+    50% {
+      transform: rotate(360deg)
+    }
+  
+    75% {
+      transform: rotate(750deg)
+    }
+  
+    100% {
+      transform: rotate(1800deg)
+    }
+  }
+  
+  @keyframes shake {
+    65%, 80%, 88%, 96% {
+      transform: rotate(0.5deg)
+    }.loader {
+      width: 120px;
+      height: 150px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(#ddd 50%, #bbb 51%),
+        linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
+        radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
+        radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
+        radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);
+      background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;
+      background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;
+      position: relative;
+      border-radius: 6%;
+      animation: shake 3s ease-in-out infinite;
+      transform-origin: 60px 180px;
+    }
+    
+    .loader:before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 100%;
+      width: 7px;
+      height: 5px;
+      background: #aaa;
+      border-radius: 0 0 4px 4px;
+      box-shadow: 102px 0 #aaa;
+    }
+    
+    .loader:after {
+      content: "";
+      position: absolute;
+      width: 95px;
+      height: 95px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 20px;
+      background-color: #bbdefb;
+      background-image: linear-gradient( to right, #0004 0%, #0004 49%, #0000 50%, #0000 100% ),
+        linear-gradient(135deg, #64b5f6 50%, #607d8b 51%);
+      background-size: 30px 100%, 90px 80px;
+      border-radius: 50%;
+      background-repeat: repeat, no-repeat;
+      background-position: 0 0;
+      box-sizing: border-box;
+      border: 10px solid #DDD;
+      box-shadow: 0 0 0 4px #999 inset, 0 0 6px 6px #0004 inset;
+      animation: spin 3s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg)
+      }
+    
+      50% {
+        transform: rotate(360deg)
+      }
+    
+      75% {
+        transform: rotate(750deg)
+      }
+    
+      100% {
+        transform: rotate(1800deg)
+      }
+    }
+    
+    @keyframes shake {
+      65%, 80%, 88%, 96% {
+        transform: rotate(0.5deg)
+      }
+    
+      50%, 75%, 84%, 92% {
+        transform: rotate(-0.5deg)
+      }
+    
+      0%, 50%, 100% {
+        transform: rotate(0)
+      }
+    }
+  
+    50%, 75%, 84%, 92% {
+      transform: rotate(-0.5deg)
+    }
+  
+    0%, 50%, 100% {
+      transform: rotate(0)
+    }
+    ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+  }
+  
+
+
+  
